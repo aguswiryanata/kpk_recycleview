@@ -1,10 +1,12 @@
 package com.gmail.wiryanatha.agus.kpkrecyclerview
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gmail.wiryanatha.agus.kpkrecyclerview.adapter.PelangganAdapter
 import com.gmail.wiryanatha.agus.kpkrecyclerview.model.Pelanggan
+import kotlinx.android.synthetic.main.activity_camera.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.alamat
 import kotlinx.android.synthetic.main.activity_main.gardu
@@ -43,6 +45,10 @@ class MainActivity : AppCompatActivity() {
             adapter = PelangganAdapter(listPlg)
         }
 
+         cameraBtn.setOnClickListener {
+             val cameraIntent = Intent (this,CameraActivity::class.java)
+             startActivity(cameraIntent)
+         }
 
     }
 

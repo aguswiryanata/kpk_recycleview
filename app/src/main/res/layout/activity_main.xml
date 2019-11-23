@@ -104,6 +104,12 @@
         android:text="SIMPAN"
         android:id="@+id/btnsimpan"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cameraBtn"
+        android:text="Ambil Photo"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
 
